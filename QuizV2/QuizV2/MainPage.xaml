@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizV2.MainPage"
+             BackgroundColor="#CDD3CE"
+             >
+
+
+    <StackLayout x:Name="CalaStrona" Margin="5,10" >
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+        <Label
+          x:Name="LaWynik"
+          FontSize="30"
+          Text="0/10"
+            TextColor="#AA6DA3"
+          Grid.Column="0"  
+            />
+
+        </Grid>
+        
+        <Label
+          x:Name="LaPytania"
+          FontSize="30"
+          Text="Pytanie:"
+         HorizontalTextAlignment="Center"
+            TextColor="#AA6DA3"
+            
+            
+           />
+            
+            <Label
+          x:Name="LaTresc"
+          FontSize="24"
+        Text="Pytanie jakeis tam"       
+            HorizontalTextAlignment="Center"
+            TextColor="#AA6DA3"
+            
+            
+            />
+
+        <Image x:Name="fotka" Source="_4" > </Image>
+        
+        <Grid Margin="0,25,0,0" x:Name="ButtonGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Button
+               
+              x:Name="ans1"
+              Grid.Column="0"
+              Grid.Row="0"
+              HeightRequest="75"
+              BackgroundColor="#B118C8"
+              Clicked="Checkclick"
+              
+                
+               />
+            <Button
+              
+              x:Name="ans2"
+              Grid.Column="0"
+              Grid.Row="1"
+              BackgroundColor="#B118C8"
+              Clicked="Checkclick"
+                
+                
+               />
+            <Button
+              
+              x:Name="ans3"
+              Grid.Column="1"
+              Grid.Row="0"
+              BackgroundColor="#B118C8"
+              Clicked="Checkclick"
+               />
+            <Button
+              
+              Grid.Column="1"
+              x:Name="ans4"
+              Grid.Row="1"
+              BackgroundColor="#B118C8"
+              Clicked="Checkclick"
+                
+                
+               />
+
+            <Button
+              Margin="0,10,0,0"
+              Text="RESTART"  
+              Grid.ColumnSpan="2"
+                
+              x:Name="restartButton"
+              Grid.Row="2"
+              BackgroundColor="#B118C8"
+              Clicked="restartButton_Clicked"
+                
+                
+               />
+
+        </Grid>
+        
+        
+    </StackLayout>
+    
+    
+</ContentPage>
